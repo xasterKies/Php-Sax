@@ -1,3 +1,4 @@
+<?php include 'database.php' ; ?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +15,11 @@
         </header>
         <div id="shouts">
             <ul>
-                <li class="shout"><span> 10:15Pm -</span> Samuel: Hey what are you guys up to?</li>
-                <li class="shout"><span> 10:15Pm -</span> Samuel: Hey what are you guys up to?</li>
-                <li class="shout"><span> 10:15Pm -</span> Samuel: Hey what are you guys up to?</li>
-                <li class="shout"><span> 10:15Pm -</span> Samuel: Hey what are you guys up to?</li>
-                <li class="shout"><span> 10:15Pm -</span> Samuel: Hey what are you guys up to?</li>
+                <li class="shout"><span> 10:15PM -</span> Samuel: Hey what are you guys up to?</li>
+                <li class="shout"><span> 10:15PM -</span> Samuel: Hey what are you guys up to?</li>
+                <li class="shout"><span> 10:15PM -</span> Samuel: Hey what are you guys up to?</li>
+                <li class="shout"><span> 10:15PM -</span> Samuel: Hey what are you guys up to?</li>
+                <li class="shout"><span> 10:15PM -</span> Samuel: Hey what are you guys up to?</li>
             </ul>
         </div>
         <div id="input">
