@@ -2,7 +2,7 @@
 <?php
     //Create select query
     $query = "SELECT *  FROM shouts";
-    $shouts = mysqli_query($query);
+    $shouts = mysqli_query($con, $query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,11 +20,10 @@
         </header>
         <div id="shouts">
             <ul>
-                <li class="shout"><span> 10:15PM -</span> Samuel: Hey what are you guys up to?</li>
-                <li class="shout"><span> 10:15PM -</span> Samuel: Hey what are you guys up to?</li>
-                <li class="shout"><span> 10:15PM -</span> Samuel: Hey what are you guys up to?</li>
-                <li class="shout"><span> 10:15PM -</span> Samuel: Hey what are you guys up to?</li>
-                <li class="shout"><span> 10:15PM -</span> Samuel: Hey what are you guys up to?</li>
+                <?php while($row = mysqli_fetch_assoc($shouts)) : ?>
+                    <li class="shout"><span> <?php echo $row['time'] ?>  -</span> <?php echo $row['user'] ?>  : <?php echo $row['message'] ?>  </li>
+                 <?php endwhile ?>
+                
             </ul>
         </div>
         <div id="input">
