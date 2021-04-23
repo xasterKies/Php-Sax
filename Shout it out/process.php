@@ -8,13 +8,14 @@
 
         //Set timezone
         date_default_timezone_set('America/New_York');
-        $time = data('h:i:s:a', time());
+        $time = date('h:i:s:a', time());
 
         //Validate input
         if(!isset($user) || $user == '' || !isset($message) || $message == ''){
-            echo 'bad'
+            echo 'bad';
         } else {
-            echo 'good'
+            $query = "INSERT INTO shouts (user, message, time) VALUES ('$user', '$message', '$time')";
+            
         }
     }
 ?>
