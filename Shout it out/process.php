@@ -11,6 +11,10 @@
         $time = data('h:i:s:a', time());
 
         //Validate input
-        if(!isset() || $user == )
+        if(!isset($user) || $user == '' || !isset($message) || $message == ''){
+            echo 'bad'
+        } else {
+            echo 'good'
+        }
     }
 ?>
