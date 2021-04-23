@@ -1,4 +1,9 @@
 <?php include 'database.php' ; ?>
+<?php
+    //Create select query
+    $query = "SELECT *  FROM shouts";
+    $shouts = mysqli_query($query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
