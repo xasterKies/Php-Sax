@@ -7,6 +7,10 @@
         $message = mysqli_real_escape_string($con, $_POST['message']);
 
         //Set timezone
+        date_default_timezone_set('America/New_York');
+        $time = data('h:i:s:a', time());
 
+        //Validate input
+        if(!isset() || $user == )
     }
 ?>
