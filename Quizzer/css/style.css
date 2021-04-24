@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 .container {
     width: 60%;
     margin:0 auto;
