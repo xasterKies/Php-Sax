@@ -45,6 +45,8 @@ header h1 {
 
 }
 
+
+
 #input {
     width: 90%;
     min-height: 80px;
@@ -60,18 +62,28 @@ header h1 {
     border: #666666 solid 1px;
 }
 
-.shout-btn {
-    padding: 10px;
+#input .shout-btn {
+    padding: 5px;
     width: 100%;
-    margin: 10px;
+    margin-bottom: 30px;
+    margin: 10px auto;
 }
 
-.error{
+.shout-error {
     background: red;
-    color: #ffffff;
+    color: #ffffff !important;
     padding: 5px;
     margin-bottom: 20px;
 }
+
+
+/* .error {
+    background: red;
+    color: #ffffff !important;
+    padding: 5px;
+    margin-bottom: 20px;
+} */
+
 @media only screen and (max-width: 768px) {
     #input input[type='text'] {
         width: 98%;

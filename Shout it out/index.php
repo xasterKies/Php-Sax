@@ -28,7 +28,7 @@
         </div>
         <div id="input">
             <?php if(isset($_GET['error'])) : ?>
-                <div class="error" >
+                <div class="shout-error" >
                     <?php echo $_GET['error']; ?>
                 </div>
             <?php endif; ?>  
