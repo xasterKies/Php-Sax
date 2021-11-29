@@ -7,8 +7,12 @@
     <title>Name</title>
 </head>
 <body>
-    <a href="name.php?name=Kevin">
-        Hi I&rsquo;m Kevin
-    </a>
+    <form action="name.php" method="POST">
+        <label for="First name">First name: </label>
+        <input type="text" name="firstname" id="firstname">
+        <label for="Last name">Last Name</label>
+        <input type="text" name="lastname" id="lastname">
+        <input type="submit" value="GO">
+    </form>
 </body>
 </html>
